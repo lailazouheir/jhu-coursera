@@ -1,132 +1,183 @@
-* {
-    box-sizing: border-box;
-    font-family: ‘Actor’;
+html {
+  height: 100%;
+  width: 100%;
 }
-
-body {
+body{
+  background-color: lavenderblush;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.heading{
+  display:inline-block;
+  vertical-align: center;
+  position:relative;
+  text-align:center;
+  color:deeppink;
+  margin-left:45%;
+}
+h1{
+  text-align:center;
+}
+h2{
+  text-align: right;
+}
+#span1{
+  background-color:deeppink;
+  color: white;
+  position:relative;
+   top:-0.5em;
+}
+#span2{
+  background-color:purple;
+  color: white;
+  position:relative;
+   top:-0.5em;
+}
+#span3{
+  background-color:pink;
+  color:deeppink;
+  position:relative;
+   top:-0.5em;
+}
+h2>span {
+  border: 5px solid hotpink;
+  padding:5px;
+}
+ #span4 {
     background-color: #fff;
-}
-.four {
-    width: 100%;
-}
-h1 {
-    color: #000099;
-    text-align: center;
-    font-size:32px;
-}
-
-span {
-    border: 1px solid #0000ff;
-    background-color: #ff99ff;
-    margin: 10px;
-}
-
-span>h2 {
-    float: right;
-    border-bottom: 1px solid #0000ff;
-    border-left: 1px solid #0000ff;
-    border-radius: 1px;
-    margin: 0;
-    width: 230px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: italic;
-    height: 45px;
-    padding-top: 10px;
-}
-
-span.one>h2 {
-    background-color: #ff9966;
-}
-
-span.two>h2 {
-    background-color: #99ff99;
-}
-
-span.three>h2 {
-    color: #e2e2e2;
-    background-color: #cc33ff;
-}
-
-span>p {
-    padding: 40px 15px 15px 15px;
-}
-
-
+    color:hotpink;
+    border: 5px solid hotpink;
+    margin-bottom: 5px;
+   margin-right: 5px;
+   text-align:justify;
+  }
+#span5 {
+    background-color: #fff;
+    color:hotpink;
+    border: 5px solid hotpink;
+    margin-bottom: 5px;
+   margin-right: 5px;
+    text-align:justify;
+  }
+#isolate {
+    background-color: #fff;
+    color:hotpink;
+    border: 5px solid hotpink;
+    text-align:justify;
+  }
 /* desktop */
-
-@media (min-width: 992px) {
-    .row-lg {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 0;
-    }
-
-    [class*="col-lg-"] {
-        grid-column: span 1;
-    }
-
-    .col-lg-1 { grid-column: span 1; }
-    .col-lg-2 { grid-column: span 2; }
-    .col-lg-3 { grid-column: span 3; }
-    .col-lg-4 { grid-column: span 4; }
-    .col-lg-5 { grid-column: span 5; }
-    .col-lg-6 { grid-column: span 6; }
-    .col-lg-7 { grid-column: span 7; }
-    .col-lg-8 { grid-column: span 8; }
-    .col-lg-9 { grid-column: span 9; }
-    .col-lg-10 { grid-column: span 10; }
-    .col-lg-11 { grid-column: span 11; }
-    .col-lg-12 { grid-column: span 12; }
+@media (min-width:992px){
+  #span1{
+  background-color:deeppink;
+  color: white;
+  position:relative;
+   top:-0.9em;
+    right:-0.7em;
 }
-
-
+#span2{
+  background-color:purple;
+  color: white;
+  position:relative;
+   top:-0.9em;
+  right:-0.7em;
+}
+#span3{
+  background-color:pink;
+  color:deeppink;
+  position:relative;
+   top:-0.9em;
+  right:-0.7em;
+}
+  body{
+    margin-left:11%;
+    display:inline-block;
+  }
+  .heading{
+    margin-left:40%;
+  }
+  #span4 {
+    background-color: #fff;
+    color:hotpink;
+    border: 5px solid hotpink;
+   text-align:justify;
+    float:left;
+    width:26%;
+    padding:1%;
+  }
+#span5 {
+    background-color: #fff;
+    color:hotpink;
+    border: 5px solid hotpink;
+    text-align:justify;
+  float:left;
+  width:26%;
+  padding:1%;
+  }
+#isolate {
+  float:left;
+    background-color: #fff;
+    color:hotpink;
+    border: 5px solid hotpink;
+    text-align:justify;
+  width:26%;
+  padding:1%;
+  }
+}
 /* tablet */
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .row-md {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 0;
-    }
-
-    [class*="col-md-"] {
-        grid-column: span 1;
-    }
-
-    .col-md-1 { grid-column: span 1; }
-    .col-md-2 { grid-column: span 2; }
-    .col-md-3 { grid-column: span 3; }
-    .col-md-4 { grid-column: span 4; }
-    .col-md-5 { grid-column: span 5; }
-    .col-md-6 { grid-column: span 6; }
-    .col-md-7 { grid-column: span 7; }
-    .col-md-8 { grid-column: span 8; }
-    .col-md-9 { grid-column: span 9; }
-    .col-md-10 { grid-column: span 10; }
-    .col-md-11 { grid-column: span 11; }
-    .col-md-12 { grid-column: span 12; }
+@media (min-width:768px) and (max-width:991px){
+  #block{
+    float:left;
+    clear:right;
+    display:inline-block;
+    width:100%
+  }
+  #span4 {
+    background-color: #fff;
+    color:hotpink;
+    border: 5px solid hotpink;
+   text-align:justify;
+    float:left;
+    width:48%;
+  }
+#span5 {
+    background-color: #fff;
+    color:hotpink;
+    border: 5px solid hotpink;
+    text-align:justify;
+  float:left;
+  width:48%;
+  }
+#isolate {
+    background-color: #fff;
+    color:hotpink;
+    border: 5px solid hotpink;
+    text-align:justify;
+  clear:left;
+  }
 }
-
-/* mobile */
-
-@media (max-width: 767px) {
-    .row {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-gap: 0;
-    }
-
-    .col-sm-1 { grid-column: span 1; }
-    .col-sm-2 { grid-column: span 2; }
-    .col-sm-3 { grid-column: span 3; }
-    .col-sm-4 { grid-column: span 4; }
-    .col-sm-5 { grid-column: span 5; }
-    .col-sm-6 { grid-column: span 6; }
-    .col-sm-7 { grid-column: span 7; }
-    .col-sm-8 { grid-column: span 8; }
-    .col-sm-9 { grid-column: span 9; }
-    .col-sm-10 { grid-column: span 10; }
-    .col-sm-11 { grid-column: span 11; }
-    .col-sm-12 { grid-column: span 12; }
+/* phone */
+@media (max-width:767px){
+  #span4 {
+    background-color: #fff;
+    color:hotpink;
+    border: 5px solid hotpink;
+    margin-bottom: 5px;
+   margin-right: 5px;
+   text-align:justify;
+    clear:both;
+  }
+#span5 {
+    background-color: #fff;
+    color:hotpink;
+    border: 5px solid hotpink;
+    margin-bottom: 5px;
+   margin-right: 5px;
+    text-align:justify;
+  clear:both;
+  }
+#isolate {
+    background-color: #fff;
+    color:hotpink;
+    border: 5px solid hotpink;
+    text-align:justify;
+  }
 }
